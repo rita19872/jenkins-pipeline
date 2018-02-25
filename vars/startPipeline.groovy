@@ -1,3 +1,6 @@
+def call(){
+
+
 node {
     stage('checkout'){
        checkout scm
@@ -7,4 +10,6 @@ node {
        //sh " mvn clean install "
       bat( /mvn clean install/) 
     }
+}
+
 }
